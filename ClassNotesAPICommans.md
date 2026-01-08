@@ -12,3 +12,10 @@ dotnet add package Swashbuckle.AspNetCore
 cd ..
 dotnet new sln -n classnotes
 dotnet sln add "ClassNotes.Api\ClassNotes.Api.csproj"
+
+Wichtige Befehle in VS Paket-Manager-Konsole:
+add-migration
+update-database
+
+## CreateBuilder
+npm create vite@latest frontend
