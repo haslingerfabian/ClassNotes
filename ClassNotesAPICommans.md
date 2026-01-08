@@ -8,3 +8,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Swashbuckle.AspNetCore 
+
+cd ..
+dotnet new sln -n classnotes
+dotnet sln add "ClassNotes.Api\ClassNotes.Api.csproj"
