@@ -11,8 +11,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "https://localhost:7185")
-        //policy.WithOrigins("https://haslingerfabian.github.io")
+        //policy.WithOrigins("http://localhost:5173", "https://localhost:7185")
+        policy.WithOrigins("https://haslingerfabian.github.io")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -65,7 +65,7 @@ app.MapPost("/notes", async (Note note, NotesDbContext db) =>
     return Results.Created($"/notes/{note.Id}", note);
 });
 
-// Notiz löschen
+// Notiz lï¿½schen
 app.MapDelete("/notes/{id}", async (int id, NotesDbContext db) =>
 {
     var note = await db.Notes.FindAsync(id);
